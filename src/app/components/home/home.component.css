@@ -17,24 +17,32 @@
 }
 
 .primera {
-    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-LHD-6.22.jpg');
+    background-image: url('/assets/arcoiris.jfif');
     
 }
 
 .segunda {
-    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD');
+    background-image: url('https://cdn.discordapp.com/attachments/1008571141507534928/1121541468469862450/livefastv_interior_of_a_luxury_home_white_walls_minimal_furnitu_2f8907ec-1321-4dae-bcec-6fe3b271cce3.png');
 }
 
 .tercera {
-    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_SolarPanels');
+    background-image: url('https://cdn.discordapp.com/attachments/1008571141507534928/1121551017952153640/GabrielMahalo82_happy_friends_in_a_restaurant_with_very_strong__b3cb0759-49fd-4cd4-b70a-bf7981e5ce91.png');
 }
 
 .cuarta {
     background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_Accessories');
+    position: relative;
 }
 
 .active {
     filter: blur(10px);
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    width: 95%;
+    margin-left: 5%;
 }
 
 /* Estilo de la barra de desplazamiento */
