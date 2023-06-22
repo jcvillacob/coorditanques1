@@ -1,0 +1,93 @@
+nav {
+    position: fixed;
+    z-index: 9999;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 55px;
+    width: 90vw;
+}
+
+.logo-imagen {
+    max-height: 70px;
+    width: auto;
+}
+
+.enlace {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    padding: 7px;
+    border-radius: 3px;
+    transition: backdrop-filter 0.3s;
+    font-size: 18px;
+}
+
+.bars {
+    display: none;
+}
+
+.enlace a:hover,.menu-open a:hover, .close:hover  {
+    background-color: rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+}
+
+.menu-open {
+    position: fixed;
+    width: 300px;
+    right: -300px;
+    top: 0;
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 70px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-active {
+    right: 0;
+}
+
+.menu-open a {
+    text-align: center;
+    width: 90%;
+    margin-top: 30px;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+
+    .navbar {
+        margin: 15px 25px;
+        width: 80vw;
+    }
+    
+    .enlace a {
+        display: none;
+    }
+
+    .bars {
+        font-size: 25px;
+        display: block !important;
+    }
+}

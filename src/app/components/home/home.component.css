@@ -1,0 +1,58 @@
+.home {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    transition: backdrop-filter 0.3s;
+}
+
+
+.section {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.primera {
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-LHD-6.22.jpg');
+    
+}
+
+.segunda {
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD');
+}
+
+.tercera {
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_SolarPanels');
+}
+
+.cuarta {
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_Accessories');
+}
+
+.active {
+    filter: blur(10px);
+}
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Ancho de la barra */
+}
+
+/* Estilo del pulgar (la parte arrastrable de la barra) */
+::-webkit-scrollbar-thumb {
+    background-color: #EE2C37;
+    /* Color del pulgar */
+    border-radius: 5px;
+    /* Borde redondeado del pulgar */
+}
+
+/* Estilo del fondo de la barra */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Color del fondo de la barra */
+}
