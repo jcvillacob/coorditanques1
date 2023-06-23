@@ -11,4 +11,8 @@ export class AppComponent {
   handleActiveOutput(value: boolean) {
     this.active = value;
   }
+
+  activarMenu(value: boolean) {
+    this.active = value;
+  }
 }

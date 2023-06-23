@@ -169,8 +169,7 @@ img {
 
 /* Estilo de la barra de desplazamiento */
 ::-webkit-scrollbar {
-    width: 10px;
-    /* Ancho de la barra */
+    width: 5px;
 }
 
 /* Estilo del pulgar (la parte arrastrable de la barra) */

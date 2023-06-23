@@ -10,7 +10,6 @@ export class HomeComponent implements OnInit {
   selectedImg: number = 0;
   imagenes: any[] = [
     {url: '/assets/slider/12.jpg', title: 'frutas'},
-    {url: 'assets/slider/Homepage-Test_Drive-NA-Desktop.gif', title: 'frutas'},
     {url: 'assets/slider/imagen-1-sin-sombra.webp', title: 'frutas'},
     {url: 'assets/slider/imagen 4.webp', title: 'frutas'},
     {url: '/assets/slider/22.jpg', title: 'frutas'},

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,11 +7,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class NavbarComponent {
 
-  active: boolean = false;
+  @Input() active: boolean = false;
   @Output() activeOutput: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  activarMenu() {
-    this.active = !this.active;
+  activarMenu(value: boolean) {
+    this.active = value;
     this.activeOutput.emit(this.active);
   }
 
