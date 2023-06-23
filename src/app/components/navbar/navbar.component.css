@@ -11,6 +11,12 @@ nav {
     width: 90vw;
 }
 
+.logo {
+    background-color: rgba(240, 248, 255, 0.534);
+    padding: 5px;
+    border-radius: 8px;
+}
+
 .logo-imagen {
     max-height: 70px;
     width: auto;
@@ -19,12 +25,15 @@ nav {
 .enlace {
     display: flex;
     justify-content: flex-end;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: rgba(240, 248, 255, 0.534);
 }
 
 a {
     text-decoration: none;
     color: black;
-    margin-left: 10px;
     padding: 7px;
     border-radius: 3px;
     transition: backdrop-filter 0.3s;

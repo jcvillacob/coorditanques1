@@ -1,5 +1,33 @@
 <div class="home" [ngClass]="{'active' : active}">
-    <div class="section primera"></div>
+
+    <!-- PRIMERA SECCION -->
+    <div class="section primera">
+        <!-- Slider Container -->
+        <div class="slider-container">
+            <!-- Left Arrow -->
+            <div class="contenedor-arrow left" (click)="previewImg()">
+                <div class="arrow-container"><i class="fa-solid fa-arrow-left"></i></div>
+            </div>
+            <!-- Right Arrow -->
+            <div class="contenedor-arrow right" (click)="nextImg()">
+                <div class="arrow-container"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <!-- Dots -->
+            <div class="dots">
+                <div class="dot-element" *ngFor="let imagen of imagenes; index as i" (click)="selectImg(i)">
+                    <i class="fa-solid fa-circle" *ngIf="selectedImg === i"></i>
+                    <i class="fa-regular fa-circle" *ngIf="!(selectedImg === i)"></i>
+                </div>
+            </div>
+            <!-- Images -->
+            <div class="slider-img" *ngFor="let imagen of imagenes; index as i" (swipeleft)="nextImg()" (swiperight)="previewImg()"
+             (swipeup)="scrollDown()">
+                <img [src]="imagen.url" [alt]="imagen.title" class="fate" [ngClass]="{'active-img': selectedImg === i}">
+            </div>
+        </div>
+    </div>
+
+
     <div class="section segunda"></div>
     <div class="section tercera"></div>
     <div class="section cuarta"><app-footer class="footer"></app-footer></div>
