@@ -1,7 +1,23 @@
-<div class="home" [ngClass]="{'active' : active}">
-
+<div class="home">
+    
     <!-- PRIMERA SECCION -->
     <div class="section primera">
+        <h1 class="titulo">Nuestros Tipos de Vehículos</h1>
+        <div class="cards">
+            <div class="card" *ngFor="let card of cards" style="background-image: url('{{card.img}}');">
+                <h2>{{ card.name }}</h2>
+                <div class="datos-vh">
+                    <h4>Cantidad de Ejes: {{ card.ejes }}</h4>
+                    <h4>Peso Máximo: {{ card.pesoMaximo }} Kg</h4>
+                    <h4>Galones Máximos: {{ card.galonesMax }} Galones</h4>
+                    <button class="boton-card" routerLink="/cotizar">Cotizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SEGUNDA SECCION -->
+    <div class="section segunda">
         <!-- Slider Container -->
         <div class="slider-container">
             <!-- Left Arrow -->
@@ -27,8 +43,11 @@
         </div>
     </div>
 
-
-    <div class="section segunda"></div>
+    <!-- TERCERA SECCION -->
     <div class="section tercera"></div>
-    <div class="section cuarta"><app-footer class="footer"></app-footer></div>
+
+    <!-- CUARTA SECCION -->
+    <div class="section cuarta">
+        <app-footer class="footer"></app-footer>
+    </div>
 </div>

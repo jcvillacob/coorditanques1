@@ -1,4 +1,4 @@
 <app-navbar  (activeOutput)="handleActiveOutput($event)" [active]="active"></app-navbar>
-<div class="total-body" (click)="activarMenu(false)">
-  <app-home [active]="active"></app-home>
+<div class="total-body" (click)="activarMenu(false)" [ngClass]="{'active' : active}">
+  <router-outlet></router-outlet>
 </div>

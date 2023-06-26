@@ -1,0 +1,63 @@
+/* GENERALES */
+.solicitud {
+    padding: 150px 100px 0;
+}
+
+
+.titulo {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.cotizar {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    gap: 30px
+}
+
+/* IMAGEN DEL COSTEO */
+.row-img {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.row-img img {
+    max-width: 90%;
+}
+
+.coordi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #EE2C37;
+    font-size: 20px;
+}
+
+.coordi h2 {
+    font-weight: 300;
+}
+
+
+/* FORM COSTEO */
+.row-costeo {
+    width: 65%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-label {
+    background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 18px;
+}

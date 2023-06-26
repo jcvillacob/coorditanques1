@@ -1,14 +1,14 @@
 <nav>
     <div class="navbar">
         <div class="logo">
-            <a routerLink="#">
+            <a routerLink="home">
                 <img class="logo-imagen" src="https://coorditanques.com/resource/icons/logo 1.webp" alt="Coordinadora de Tanques">
             </a>
         </div>
         <div class="menu">
             <div class="enlace">
-                <a routerLink="">Home</a>
-                <a routerLink="">Cotizar</a>
+                <a routerLink="home">Home</a>
+                <a routerLink="cotizar">Cotizar</a>
                 <a (click)="activarMenu(true)">Menú</a>
                 <a class="bars" (click)="activarMenu(true)"><i class="fa-solid fa-bars "></i></a>
                 
@@ -16,8 +16,8 @@
         </div>
         <div class="menu-open" [ngClass]="{'nav-active' : active}">
             <i class="close fa-solid fa-xmark" (click)="activarMenu(false)"></i>
-            <a routerLink="">Home</a>
-            <a routerLink="">Cotizar</a>
+            <a routerLink="home">Home</a>
+            <a routerLink="cotizar">Cotizar</a>
             <a routerLink="">Menú</a>
         </div>
     </div>

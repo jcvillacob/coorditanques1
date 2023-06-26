@@ -19,6 +19,11 @@ export class HomeComponent implements OnInit {
     {url: 'https://cdn.pixabay.com/photo/2017/07/22/09/03/road-2528145_1280.jpg', title: 'mariposa'},
     {url: 'https://cdn.pixabay.com/photo/2018/01/22/13/07/couple-3098951_1280.jpg', title: 'splash'}
   ];
+  cards: any[] = [
+    {name: "Tractomula", ejes: 6, pesoMaximo: "34.000", galonesMax: "10.800", img: 'assets/tipoVh/tractomula.jfif'},
+    {name: "Doble Troque", ejes: 3, pesoMaximo: "18.000", galonesMax: "5.500", img: 'https://images.unsplash.com/photo-1682033240184-262fdb8234cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'},
+    {name: "Sencillo", ejes: 2, pesoMaximo: "10.000", galonesMax: "3.400", img: 'https://images.pexels.com/photos/5410923/pexels-photo-5410923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
+  ];
 
   currentSection = 0;
 

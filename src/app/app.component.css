@@ -2,3 +2,7 @@
     width: 100vw;
     overflow: hidden;
 }
+
+.active {
+    filter: blur(10px);
+}
