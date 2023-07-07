@@ -1,6 +1,14 @@
 nav {
     position: fixed;
     z-index: 9999;
+    transform: translateY(100px);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+}
+
+.init {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .navbar {
@@ -8,7 +16,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 15px 55px;
-    width: 90vw;
+    width: 94vw;
 }
 
 .logo {

@@ -40,10 +40,11 @@
 /* ******  PRIMERA SECCION  ****** */
 .titulo {   
     margin-top: 8%;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 35px;
     margin-left: 100px;
     font-size: 55px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .cards {
@@ -74,7 +75,7 @@
 }
 
 .card:hover {
-    scale: 1.03;
+    transform: scale(1.00);
 }
 
 .card h2 {
@@ -84,24 +85,24 @@
     padding: 10px;
     background-color: #3b393952;
     border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .datos-vh {
     position: absolute;
     top: 100%;
     left: 0;
-    padding-bottom: 10%;
-    padding-left: 25px;
-    height: 100%;
+    padding: 0 0 10% 25px;
+    font-size: 20px;
     color: black;
     background-color: rgba(207, 203, 204, 0.37);
     width: 96%;
+    height: 100%;
     backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 15px;
-    font-size: 20px;
     transition: all 0.5s ease;
 }
 
@@ -124,7 +125,6 @@
     cursor: pointer;
     background-color: #c9242c;
 }
-
 
 
 

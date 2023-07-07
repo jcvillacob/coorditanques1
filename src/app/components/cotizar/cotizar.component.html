@@ -1,5 +1,5 @@
-<div class="solicitud">
-    <h1 class="titulo">Solicita tu Cotización</h1>
+<div class="request">
+    <h1 class="title">Solicita tu Cotización</h1>
     <div class="cotizar">
         <div class="row-img">
             <img src="assets/cotizar-envio.png" alt="Calculadora">
@@ -17,36 +17,106 @@
                     <div class="titulo-label">
                         <h3>Datos de la Empresa</h3>
                     </div>
-                    
+                    <div class="labels">
+                        <div class="label">
+                            <label for="nombre-empresa">Nombre de Empresa: </label>
+                            <input type="text" name="nombre-empresa" id="nombre-empresa">
+                        </div>
+                        <div class="label">
+                            <label for="NIT">NIT: </label>
+                            <input type="text" name="NIT" id="NIT">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="seccion-form">
                     <div class="titulo-label">
                         <h3>Datos Personales</h3>
                     </div>
-                    
-                </div>
-
-                <div class="seccion-form">
-                    <div class="titulo-label">
-                        <h3>Tipo de Vehículo</h3>
+                    <div class="labels">
+                        <div class="label">
+                            <label for="nombre">Nombre del Solicitante: </label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+                        <div class="label">
+                            <label for="email">Correo Electrónico: </label>
+                            <input type="text" name="email" id="email">
+                        </div>
                     </div>
-                    
                 </div>
-
+                
                 <div class="seccion-form">
                     <div class="titulo-label">
                         <h3>Lugar de Origen</h3>
                     </div>
-
+                    <div class="labels">
+                        <div class="label">
+                            <label for="ciudadO">Ciudad: </label>
+                            <input type="text" name="ciudadO" id="ciudadO">
+                        </div>
+                        <div class="label">
+                            <label for="direccionO">Dirección: </label>
+                            <input type="text" name="direccionO" id="direccionO">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="seccion-form">
                     <div class="titulo-label">
                         <h3>Lugar de Destino</h3>
                     </div>
-
+                    <div class="labels">
+                        <div class="label">
+                            <label for="ciudadD">Ciudad: </label>
+                            <input type="text" name="ciudadD" id="ciudadD">
+                        </div>
+                        <div class="label">
+                            <label for="direccionD">Dirección: </label>
+                            <input type="text" name="direccionD" id="direccionD">
+                        </div>
+                    </div>
                 </div>
+
+                <div class="seccion-form">
+                    <div class="titulo-label">
+                        <h3>Tipo de Vehículo</h3>
+                    </div>
+                    <div class="labels">
+                        <div class="label">
+                            <label for="vehiculo">Tipo de Vehículo: </label>
+                            <select name="vehiculo" id="vehiculo">
+                                <option value="">Seleccione Tipo de Vehículo</option>
+                                <option value="TM">Tractomula</option>
+                                <option value="DT">Doble Troque</option>
+                                <option value="SC">Sencillo</option>
+                            </select>
+                        </div>
+                        <div class="label">
+                            <h4>Capacidad Máxima: </h4>
+                            <ul style="margin-top: 10px;">
+                                <li><span>10.800 Galones</span></li>
+                                <li><span>34.000 Kilogramos</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seccion-form">
+                    <div class="titulo-label">
+                        <h3>Observaciones</h3>
+                    </div>
+                    <div class="labels">
+                        <div class="label">
+                            <label for="producto">Producto: </label>
+                            <input type="text" name="producto" id="producto">
+                        </div>
+                        <div class="label">
+                            <label for="observaciones">Observaciones: </label>
+                            <textarea type="text" name="observaciones" id="observaciones"></textarea>
+                        </div>
+                    </div>
+                </div>
+
             </form>
         </div>
     </div>
